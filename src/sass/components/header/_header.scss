@@ -1,0 +1,561 @@
+// Header
+
+.header {
+  // Position
+  position: relative;
+
+  &__wrap-top {
+    // Position
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &__wrap-top-inner {
+    // Position
+    display: flex;
+    flex-flow: row nowrap;
+    // Block model
+    width: 1280px;
+    padding: 1.25rem 0;
+
+    @media (max-width: 1280px) {
+      // Block model
+      width: 100%;
+    }
+
+  }
+
+  &__brand {
+    // Position
+    display: flex;
+    align-items: center;
+    flex: auto;
+  }
+
+  &__picture {
+    // Position
+    position: relative;
+
+    &::after {
+      // Position
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 1.75rem;
+      // Block model
+      width: 1px;
+      height: 100%;
+      z-index: 999;
+      // Stylization
+      background-color: var(--color-accent-2);
+    }
+
+  }
+
+  &__home {
+    // Position
+    display: block;
+    // Stylization
+    transition: opacity .4s ease-in;
+
+    &:focus  {
+      // Stylization
+      opacity: .5;
+    }
+
+  }
+
+  &__logo {
+    // Position
+    position: relative;
+    // Block model
+    width: 47px;
+    height: 61px;
+    margin: 0 60px 0 0;
+    // Animation
+    transition: transform .4s ease-in;
+
+    &:hover, &:focus {
+      transform: translateY(-5%);
+    }
+
+  }
+
+  &__name {
+    // Position
+    display: flex;
+    flex-flow: column;
+    // Typography
+    font-size: .75rem;
+    text-transform: uppercase;
+
+    &-text {
+      // Typography
+      color: var(--color-accent-2);
+      font-size: 1rem;
+    }
+
+  }
+
+  &__social {
+    // Position
+    display: flex;
+    align-items: center;
+    // Block model
+    margin: 0 1rem 0 0;
+    // Typography
+    font-size: 0;
+
+    @media (max-width: 480px) {
+      // Position
+      display: none;
+    }
+
+    &-item {
+      // Block model
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0 .75rem 0 0;
+
+      &:last-of-type {
+        // Block model
+        margin: 0;
+      }
+
+    }
+
+    &-link {
+      // Position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // Block model
+      width: 100%;
+      height: 100%;
+      // Stylization
+      border: solid 1px var(--color-black);
+      border-radius: 50%;
+      fill: var(--color-black);
+      // Animation
+      transition: background-color .4s ease-in,
+                  fill .4s ease-in;
+
+      &:hover, &:focus {
+        // Stylization
+        background-color: var(--color-accent-2);
+        fill: var(--color-white);
+      }
+
+      &-svg {
+        // Stylization
+        fill: inherit;
+      }
+
+      &-path {
+        // Stylization
+        fill: inherit;
+      }
+
+    }
+
+  }
+
+  &__contacts {
+    // Position
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    // Typography
+    font-size: .75em;
+    text-align: right;
+    text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+      // Position
+      display: none;
+    }
+
+    &-mail {
+      // Typography
+      color: var(--color-accent-2);
+      font-size: 1rem;
+
+      &:hover, &:focus {
+        // Typography
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  &__wrap-nav {
+    // Block model
+    width: auto;
+    box-sizing: border-box;
+    // Typography
+    color: var(--color-white);
+    // Stylization
+    background-color: var(--color-accent-2);
+
+    &--inner {
+      // Block model
+      width: 1280px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+  }
+
+  &__nav {
+    // Position
+    position: relative;
+    display: flex;
+
+    &-menu {
+      // Position
+      display: none;
+      // Block model
+      width: auto;
+      height: 4rem;
+      padding: 1em 0;
+      box-sizing: border-box;
+      // Typography
+      font-size: 1.125rem;
+      font-family: var(--font-main);
+      text-transform: uppercase;
+
+      @media (max-width: 1024px) {
+        // Position
+        display: block;
+      }
+
+      &:focus {
+        // Typography
+        text-decoration: underline;
+        // Stylization
+        outline: none;
+      }
+
+    }
+
+    &-svg {
+      // Block model
+      margin-right: 1em;
+    }
+
+    &-link {
+      // Block model
+      padding: 1em 2em 1em 0;
+      // Typography
+      font-size: 1.125rem;
+      text-transform: uppercase;
+
+      @media (max-width: 1024px) {
+        // Position
+        display: none;
+      }
+
+      &:hover, &:focus {
+        // Typography
+        text-decoration: underline;
+      }
+
+    }
+
+    &-section {
+      // Position
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-flow: row;
+      // Block model
+      z-index: 1;
+      // Typography
+      color: var(--color-black);
+      font-size: 1.125rem;
+
+      &--visible {
+        // Position
+        display: flex;
+      }
+
+      &-link {
+        // Position
+        display: block;
+        // Block model
+        padding: 0.75em 1.5em;
+        // Stylization
+        background-color: var(--color-optional-1);
+        // Animation
+        transition: background-color .4s ease-in;
+
+        &:hover, &:focus {
+          // Stylization
+          background-color: var(--color-accent);
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.menu {
+  // Position
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  // Block model
+  width: 300px;
+  height: 100%;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  z-index: 999;
+  // Stylization
+  box-shadow: var(--color-black) 5px 0 0;
+  background-color: var(--color-white);
+
+  @media (max-width: 1024px) {
+    // Position
+    display: block;
+  }
+
+  &__home {
+    // Position
+    display: flex;
+    align-items: center;
+    // Block model
+    margin-bottom: 1rem;
+
+    &:focus  {
+      // Stylization
+      opacity: .5;
+    }
+
+  }
+
+  &__picture {
+    // Position
+    position: relative;
+    display: block;
+    // Block model
+    height: 100%;
+
+    &::after {
+      // Position
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 1.75rem;
+      // Block model
+      width: 1px;
+      height: 100%;
+      z-index: 999;
+      // Stylization
+      background-color: var(--color-accent-2);
+    }
+
+  }
+
+  &__image {
+    // Position
+    position: relative;
+    // Block model
+    width: 47px;
+    height: 61px;
+    margin: 0 60px 0 0;
+    // Animation
+    transition: transform .4s ease-in;
+
+    &:hover, &:focus {
+      transform: translateY(-5%);
+    }
+
+  }
+
+  &__brand {
+    // Position
+    display: flex;
+    flex-flow: column;
+    // Typography
+    font-size: .75rem;
+    text-transform: uppercase;
+
+    &-text {
+      // Typography
+      color: var(--color-accent-2);
+      font-size: 1rem;
+    }
+
+  }
+
+  &__name {
+    // Typography
+    color: var(--color-accent-2);
+    font-size: 1rem;
+  }
+
+  &__nav {
+    // Block model
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    // Position
+    position: relative;
+    display: flex;
+    // Block model
+    margin-bottom: .5em;
+
+    &--hidden {
+      // Position
+      display: none;
+    }
+
+  }
+
+  &__link {
+    // Typography
+    font-size: 1.5rem;
+
+    &:hover {
+      // Typography
+      color: var(--color-accent-2);
+    }
+
+    &:focus {
+      // Typography
+      color: var(--color-accent-2);
+      text-decoration: underline;
+    }
+
+    &-svg {
+      // Position
+      position: absolute;
+      top: 35%;
+      right: 0;
+      // Stylization
+      fill: none;
+      stroke: var(--color-black);
+
+      &--reversed {
+        // Animation
+        transform: rotate(180deg);
+      }
+
+    }
+
+    &-path {
+      // Stylization
+      stroke: inherit;
+      stroke-width: 2px;
+      stroke-linecap: round;
+    }
+
+  }
+
+  &__sublist {
+    // Position
+    display: flex;
+    flex-flow: column;
+
+    &-item {
+      // Block model
+      margin-bottom: .5em;
+
+      &:last-of-type {
+        // Block model
+        margin-bottom: 0;
+      }
+
+    }
+
+    &-link {
+      // Typography
+      font-size: 1.25rem;
+
+      &:hover {
+        // Typography
+        color: var(--color-accent);
+      }
+
+      &:focus {
+        // Typography
+        color: var(--color-accent);
+      }
+
+    }
+
+  }
+
+  &__social {
+    // Position
+    display: flex;
+    align-items: center;
+    // Block model
+    margin: 0 0 1rem 0;
+    // Typography
+    font-size: 0;
+
+    &-item {
+      // Block model
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0 .75rem 0 0;
+
+      &:last-of-type {
+        // Block model
+        margin: 0;
+      }
+
+    }
+
+    &-link {
+      // Position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // Block model
+      width: 100%;
+      height: 100%;
+      // Stylization
+      border: solid 1px var(--color-black);
+      border-radius: 50%;
+      fill: var(--color-black);
+      // Animation
+      transition: background-color .4s ease-in,
+                  fill .4s ease-in;
+
+      &:hover, &:focus {
+        // Stylization
+        background-color: var(--color-accent-2);
+        fill: var(--color-white);
+      }
+
+      &-svg {
+        // Stylization
+        fill: inherit;
+      }
+
+      &-path {
+        // Stylization
+        fill: inherit;
+      }
+
+    }
+
+  }
+
+  &__copyright {
+    // Typography
+    color: var(--color-accent-2);
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+
+}

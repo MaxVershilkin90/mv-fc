@@ -1,0 +1,87 @@
+.form {
+  // Typography
+  color: var(--color-white);
+
+  &__field {
+    // Position
+    display: flex;
+    flex-flow: column;
+    // Block model
+    margin: 0 0 1rem 0;
+    padding: 0;
+    // Stylization
+    border: none;
+
+    &:last-of-type {
+      // Block model
+      margin: 0 0 2rem 0;
+    }
+
+  }
+
+  &__label {
+    // Block model
+    margin-bottom: .75em;
+    // Typography
+    font-size: 1.5rem;
+  }
+
+  &__dot {
+    // Typography
+    color: var(--color-accent-2);
+  }
+
+  &__input {
+    // Block model
+    padding: .75em;
+    // Typography
+    color: var(--color-optional-1);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    // Stylization
+    border: var(--color-white) 1px solid;
+    background-color: transparent;
+    // Animation
+    transition: border-color .4s ease-in;
+
+    &:focus {
+      // Stylization
+      outline: none;
+      border-color: var(--color-accent-2);
+    }
+
+  }
+
+  &__area {
+    // Block model
+    width: 100%;
+    padding: .75em;
+    box-sizing: border-box;
+    // Typography
+    color: var(--color-optional-1);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    // Stylization
+    border: var(--color-white) 1px solid;
+    background-color: transparent;
+    // Animation
+    transition: border-color .4s ease-in;
+
+    &:focus {
+      // Stylization
+      outline: none;
+      border-color: var(--color-accent-2);
+    }
+
+  }
+
+  &__button {
+
+    &:focus {
+      // Stylization
+      outline: none;
+    }
+
+  }
+
+}

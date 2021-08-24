@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=content-width;initial-scale=1.0">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="./css/common.css" media="all">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="./css/pages/main.css" media="all">
+    <link rel="stylesheet" href="/css/common.css">
+  </head>
+  <body>
+
+    <include src="./src/sass/components/header/header.html"></include>
+
+    <section class="slider">
+
+      <div class="slider__wrap container container--wide">
+
+        <div class="slider__slides">
+
+          <button class="slider__button slider__button--previous" type="button" name="previous">
+            Предыдущий слайд
+
+            <svg class="slider__button-svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <path class="slider__button-path" d="M14 1L2 13L14 25" />
+
+            </svg>
+
+          </button>
+
+          <button class="slider__button slider__button--next" type="button" name="next">
+            Следующий слайд
+
+            <svg class="slider__button-svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <path class="slider__button-path" d="M1 1L13 13L1 25" />
+
+            </svg>
+
+          </button>
+
+          <div class="slider__slide slider__slide--active">
+
+            <div class="slider__border container">
+
+              <div class="slider__content">
+
+                <span class="slider__topic">
+                  Слайд №1
+                </span>
+
+                <h1 class="slider__title">
+                  Заголовок новости
+                </h1>
+
+                <p class="slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </p>
+
+                <a class="slider__more button" href="#">
+                  Подробнее
+                </a>
+
+              </div>
+
+              <div class="slider__graphics">
+
+                <picture class="slider__picture">
+
+                  <img class="slider__image" src="" alt="Изображение для слайда">
+
+                </picture>
+
+              </div>
+
+              <ul class="slider__checker">
+
+              <li class="slider__checker-item">
+
+                <button class="slider__checker-button slider__checker-button--active" type="button" name="button">
+                  Слайд №1
+                </button>
+
+              </li>
+
+              <li class="slider__checker-item">
+
+                <button class="slider__checker-button" type="button" name="button">
+                  Слайд №2
+                </button>
+
+              </li>
+
+              <li class="slider__checker-item">
+
+                <button class="slider__checker-button" type="button" name="button">
+                  Слайд №3
+                </button>
+
+              </li>
+
+            </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="scheduler">
+
+      <div class="scheduler__wrap container">
+
+        <h2 class="scheduler__title title">
+          Ближайшие матчи
+        </h2>
+
+        <ul class="scheduler__list">
+
+          <li class="scheduler__item">
+
+            <a href="#" class="scheduler__report">
+              Протокол
+            </a>
+
+            <span class="scheduler__tour">1 тур</span>
+
+            <span class="scheduler__date">9 Августа 2020</span>
+
+            <span class="scheduler__time">Время матча: 17:00</span>
+
+            <div class="scheduler__teams">
+
+              <div class="scheduler__home">
+
+                <img src="/imgs/img-team-quant.png" alt="Квант Обнинск" height="100%">
+
+              </div>
+
+              <div class="scheduler__scores">
+                <span class="scheduler__score-home">1</span>
+                <span class="scheduler__score-divider">:</span>
+                <span class="scheduler__score-visitors">2</span>
+              </div>
+
+              <div class="scheduler__visitors">
+
+                <img src="/imgs/img-team-quant.png" alt="Металлург-Видное" height="100%">
+
+              </div>
+
+            </div>
+
+            <div class="scheduler__place">
+              <span class="scheduler__place-title">Место проведения</span>
+              <span class="scheduler__city">Обнинск, ст. Труд</span>
+            </div>
+
+          </li>
+
+          <li class="scheduler__item">
+
+            <a href="#" class="scheduler__report">
+              Протокол
+            </a>
+
+            <span class="scheduler__tour">1 тур</span>
+
+            <span class="scheduler__date">9 Августа 2020</span>
+
+            <span class="scheduler__time">Время матча: 17:00</span>
+
+            <div class="scheduler__teams">
+
+              <div class="scheduler__home">
+
+                <img src="/imgs/img-team-quant.png" alt="Квант Обнинск" height="100%">
+
+              </div>
+
+              <div class="scheduler__scores">
+                <span class="scheduler__score-home">1</span>
+                <span class="scheduler__score-divider">:</span>
+                <span class="scheduler__score-visitors">2</span>
+              </div>
+
+              <div class="scheduler__visitors">
+
+                <img src="/imgs/img-team-quant.png" alt="Металлург-Видное" height="100%">
+
+              </div>
+
+            </div>
+
+            <div class="scheduler__place">
+              <span class="scheduler__place-title">Место проведения</span>
+              <span class="scheduler__city">Обнинск, ст. Труд</span>
+            </div>
+
+          </li>
+
+          <li class="scheduler__item">
+
+            <span class="scheduler__tour">Кубок 1/128</span>
+
+            <span class="scheduler__date">9 Августа 2020</span>
+
+            <span class="scheduler__time">Время матча: 17:00</span>
+
+            <div class="scheduler__teams">
+
+              <div class="scheduler__home">
+
+                <img src="/imgs/img-team-quant.png" alt="Квант Обнинск" height="100%">
+
+              </div>
+
+              <div class="scheduler__scores">
+                <span class="scheduler__score-home">1</span>
+                <span class="scheduler__score-divider">:</span>
+                <span class="scheduler__score-visitors">2</span>
+              </div>
+
+              <div class="scheduler__visitors">
+
+                <img src="/imgs/img-team-quant.png" alt="Металлург-Видное" height="100%">
+
+              </div>
+
+            </div>
+
+            <div class="scheduler__place">
+              <span class="scheduler__place-title">Место проведения</span>
+              <span class="scheduler__city">Обнинск, ст. Труд</span>
+            </div>
+
+          </li>
+
+          </ul>
+
+      </div>
+
+    </section>
+
+    <section class="banner">
+
+      <div class="banner__wrap container">
+
+        <h2 class="banner__title title title--highlighted">
+          Олимп-первенство ПФЛ
+        </h2>
+
+        <div class="banner__subtitle">
+          Сезон 2020/21
+        </div>
+
+        <div class="banner__image">
+
+          <a class="banner__link" href="https://www.olimp.bet/">
+
+            <img class="banner__logo" src="/imgs/img-logo-olimpbet.png" alt="Логотип Олимп Бэт">
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="stats">
+
+      <div class="stats__wrap container">
+
+        <section class="stats__players">
+
+          <h3 class="stats__players-title title">
+            Статистика
+          </h3>
+
+          <span class="stats__players-subtitle subtitle">
+            игроков
+          </span>
+
+          <table class="stats__players-table">
+
+            <tbody><tr class="stats__players-line">
+              <th class="stats__players-header">№</th>
+              <th class="stats__players-header stats__players-header--left">Игрок</th>
+              <th class="stats__players-header">И</th>
+              <th class="stats__players-header">Г</th>
+              <th class="stats__players-header">П</th>
+              <th class="stats__players-header">ЖК</th>
+              <th class="stats__players-header">КК</th>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">1</td>
+              <td class="stats__players-player stats__players-player--left">Шильников</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">2</td>
+              <td class="stats__players-player stats__players-player--left">Малаки</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">3</td>
+              <td class="stats__players-player stats__players-player--left">Бекишев</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">4</td>
+              <td class="stats__players-player stats__players-player--left">Николаев</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">5</td>
+              <td class="stats__players-player stats__players-player--left">Сидоров</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">6</td>
+              <td class="stats__players-player stats__players-player--left">Рыжов</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">7</td>
+              <td class="stats__players-player stats__players-player--left">Родный</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">8</td>
+              <td class="stats__players-player stats__players-player--left">Обольский</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">9</td>
+              <td class="stats__players-player stats__players-player--left">Акопов</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">10</td>
+              <td class="stats__players-player stats__players-player--left">Могулкин</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">11</td>
+              <td class="stats__players-player stats__players-player--left">Максимович</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">12</td>
+              <td class="stats__players-player stats__players-player--left">Иванов</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">13</td>
+              <td class="stats__players-player stats__players-player--left">Барбашов</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">14</td>
+              <td class="stats__players-player stats__players-player--left">Вульфов</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">15</td>
+              <td class="stats__players-player stats__players-player--left">Попов</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+            <tr class="stats__players-line">
+              <td class="stats__players-player">16</td>
+              <td class="stats__players-player stats__players-player--left">Лелюхин</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+              <td class="stats__players-player">0</td>
+            </tr>
+
+          </tbody></table>
+
+        </section>
+
+        <section class="stats__scores">
+
+          <h3 class="stats__scores-title title">Турнирная таблица</h3>
+
+          <span class="stats__scores-subtitle subtitle">2 Тур сезон 2020/21</span>
+
+          <table class="stats__scores-table">
+
+            <tbody><tr class="stats__scores-header">
+              <th class="stats__scores-header">№</th>
+              <th class="stats__scores-header stats__scores-header--left">Команда</th>
+              <th class="stats__scores-header">И</th>
+              <th class="stats__scores-header">В</th>
+              <th class="stats__scores-header">Н</th>
+              <th class="stats__scores-header">П</th>
+              <th class="stats__scores-header">ГЗ</th>
+              <th class="stats__scores-header">ГП</th>
+              <th class="stats__scores-header">О</th>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team stats__scores-team--left">Рязань</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">9</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">12</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team stats__scores-team--left">Салют</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">11</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">10</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team stats__scores-team--left">Салют-Белгород</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">7</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">10</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team stats__scores-team--left">Химик-Арсенал</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">8</td>
+            </tr>
+
+            <tr class="stats__scores-line stats__scores-line--active">
+              <td class="stats__scores-team">5</td>
+              <td class="stats__scores-team stats__scores-team--left">Металлург-Видное</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">7</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">6</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">6</td>
+              <td class="stats__scores-team stats__scores-team--left">Сатурн</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">5</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">6</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">7</td>
+              <td class="stats__scores-team stats__scores-team--left">Калуга</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">6</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">8</td>
+              <td class="stats__scores-team stats__scores-team--left">Металлург Липецк</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">6</td>
+              <td class="stats__scores-team">7</td>
+              <td class="stats__scores-team">6</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">9</td>
+              <td class="stats__scores-team stats__scores-team--left">Квант</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">9</td>
+              <td class="stats__scores-team">6</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">10</td>
+              <td class="stats__scores-team stats__scores-team--left">Знамя</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">9</td>
+              <td class="stats__scores-team">5</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">11</td>
+              <td class="stats__scores-team stats__scores-team--left">Красный</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">5</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">12</td>
+              <td class="stats__scores-team stats__scores-team--left">Авангард</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">5</td>
+              <td class="stats__scores-team">7</td>
+              <td class="stats__scores-team">4</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">13</td>
+              <td class="stats__scores-team stats__scores-team--left">Строгино</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">2</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">7</td>
+              <td class="stats__scores-team">4</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">14</td>
+              <td class="stats__scores-team stats__scores-team--left">Химки-М</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">3</td>
+              <td class="stats__scores-team">5</td>
+              <td class="stats__scores-team">8</td>
+              <td class="stats__scores-team">3</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">15</td>
+              <td class="stats__scores-team stats__scores-team--left">Факел-М</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">1</td>
+              <td class="stats__scores-team">9</td>
+              <td class="stats__scores-team">0</td>
+            </tr>
+
+            <tr class="stats__scores-line">
+              <td class="stats__scores-team">16</td>
+              <td class="stats__scores-team stats__scores-team--left">Сахалин</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">4</td>
+              <td class="stats__scores-team">0</td>
+              <td class="stats__scores-team">12</td>
+              <td class="stats__scores-team">0</td>
+            </tr>
+
+          </tbody></table>
+
+        </section>
+
+
+      </div>
+
+    </section>
+
+    <section class="photos">
+
+      <div class="photos__wrap container">
+
+        <h3 class="photos__title title">Фотогалерея</h3>
+
+        <div class="photos__list">
+
+          <figure class="photos__list-item">
+
+            <picture class="photos__list-picture">
+
+              <img class="photos__list-image" src="/imgs/img-photo-21-08-01.jpg" alt="Альбом" >
+
+            </picture>
+
+          </figure>
+
+          <figure class="photos__list-item">
+
+            <picture class="photos__list-picture">
+
+              <img class="photos__list-image" src="/imgs/img-photo-21-08-01.jpg" alt="Альбом" >
+
+            </picture>
+
+          </figure>
+
+          <figure class="photos__list-item">
+
+            <picture class="photos__list-picture">
+
+              <img class="photos__list-image" src="/imgs/img-photo-21-08-01.jpg" alt="Альбом" >
+
+            </picture>
+
+          </figure>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="videos">
+
+      <div class="videos__wrap container">
+
+        <h4 class="videos__title title">Видеогалерея</h4>
+
+        <ul class="videos__list">
+
+          <li class="videos__list-item">
+            <iframe class="videos__list-source" src="https://www.youtube.com/embed/6KU_V9bKDR8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+          </li>
+
+          <li class="videos__list-item">
+            <iframe class="videos__list-source" src="https://www.youtube.com/embed/6KU_V9bKDR8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="partners">
+
+      <div class="partners__wrap container">
+
+        <h2 class="partners__title title title--hidden">
+          Партнёры клуба
+        </h2>
+
+        <ul class="partners__list">
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="https://www.olimp.bet/" target="_blank">
+              Олимпбэт
+              <img src="/imgs/img-partner-olimpbet.png" alt="Олимпбэт">
+
+            </a>
+
+          </li>
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="http://ru.silalawyers.com/" target="_blank">
+              Сила
+              <img src="/imgs/img-partner-sila.png" alt="Сила">
+
+            </a>
+
+          </li>
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="https://www.patrick.eu/en-eu/" target="_blank">
+              Patrick
+              <img src="/imgs/img-partner-patrick.png" alt="Patrick">
+
+            </a>
+
+          </li>
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="https://vesti-vidnoe.ru/" target="_blank">
+              Видновские вести
+              <img src="/imgs/img-partner-news.png" alt="Видновские вести">
+
+            </a>
+
+          </li>
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="http://vidnoe-tv.ru/" target="_blank">
+              Видное ТВ
+              <img src="/imgs/img-partner-vidnoetv.png" alt="Видное ТВ">
+
+            </a>
+
+          </li>
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="https://www.pfl-russia.com/" target="_blank">
+              Профессиональная футбольная лига
+              <img src="/imgs/img-partner-pfl.png" alt="Профессиональный футбольная лига">
+
+            </a>
+
+          </li>
+
+          <li class="partners__item">
+
+            <a class="partners__link" href="https://rfs.ru/" target="_blank">
+              Российский футбольный союз
+              <img src="/imgs/img-partner-union.png" alt="Российский футбольный союз">
+
+            </a>
+
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="feedback">
+
+      <div class="feedback__wrap container">
+
+        <h2 class="feedback__title title title--lighted">
+          Задать вопрос
+        </h2>
+
+        <form class="feedback__form form" action="index.html" method="post">
+
+          <fieldset class="form__field">
+
+            <label class="form__label" for="name">
+              Имя
+              <span class="form__dot">
+                *
+              </span>
+
+            </label>
+
+            <input id="name" class="form__input" type="text" name="name" value="" placeholder="Ваше имя">
+
+          </fieldset>
+
+          <fieldset class="form__field">
+
+            <label class="form__label" for="mail">
+              Почта
+              <span class="form__dot">
+                *
+              </span>
+
+            </label>
+
+            <input id="mail" class="form__input" type="text" name="name" value="" placeholder="Ваш почтовый ящик">
+
+          </fieldset>
+
+          <fieldset class="form__field">
+
+            <label class="form__label" for="message">
+              Сообщение
+              <span class="form__dot">
+                *
+              </span>
+
+            </label>
+
+            <textarea id="message" class="form__area" name="name" rows="8" cols="80" placeholder="Введите Ваше сообщение"></textarea>
+
+          </fieldset>
+
+          <button class="form__button button" type="submit" name="button">
+            Отправить
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <include src="./src/sass/components/footer/footer.html"></include>
+
+  </body>
+
+  <script src="/js/main.js" type="module"></script>
+
+</html>

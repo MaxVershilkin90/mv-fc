@@ -90,7 +90,7 @@ function svgsprite() {
 
 // Html
 function html() {
-  return src("src/**/*.html")
+  return src("src/*.html")
     .pipe(posthtml([
       include()
     ]))

@@ -1,0 +1,176 @@
+@import 'components/header/header';
+@import 'components/footer/footer';
+@import 'components/buttons/buttons';
+@import 'components/form/form';
+@import 'animation';
+
+// Common elements styles.
+:root {
+  // Variables
+  --font-size: 16px;
+  // Typography
+  font-size: var(--font-size);
+}
+
+html {
+  // Variables
+  --color-accent: #fc0;
+  --color-accent-2: #9e0b0f;
+  --color-accent-2-025: rgba(158,11,15,0.25);
+  --color-black: #000;
+  --color-white: #fff;
+  --color-white-010: rgba(255,255,255,0.10);
+  --color-white-025: rgba(255,255,255,0.25);
+  --color-white-050: rgba(255,255,255,0.5);
+  --color-optional-1: #ebebeb;
+  --color-optional-2: #f2f2f2;
+  --color-optional-3: #111;
+  // Fonts
+  --font-main: "Oswald";
+  // Sizes
+  --container-width: auto;
+}
+
+body {
+  // Block model
+  margin: 0;
+  padding: 0;
+  // Typography
+  font-family: var(--font-main), "Helvetica", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // Block model
+  margin: 0;
+  // Typography
+  color: inherit;
+  font-family: var(--font-optional), "Helvetica", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  // Block model
+  margin: 0;
+  // Typography
+  font-size: 1.5rem;
+  color: inherit;
+
+}
+
+ul {
+  // Block model
+  margin: 0;
+  padding: 0;
+  // Stylization
+  list-style-type: none;
+  // Typography
+  color: inherit;
+}
+
+a {
+  // Typography
+  color: inherit;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    // Stylization
+    outline: none;
+  }
+
+}
+
+button {
+    // Block model
+    padding: 0;
+    // Stylization
+    border: none;
+    background-color: transparent;
+    // Typography
+    color: inherit;
+}
+
+figure {
+  // Block model
+  margin: 0;
+  padding: 0;
+}
+
+picture {
+  // Block model
+  margin: 0;
+  padding: 0;
+}
+
+// Common elements
+
+.container {
+  // Block model
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+
+  @media (max-width: 1280px) {
+    // Block model
+    width: auto;
+  }
+
+  @media (max-width: 1024px) {
+    // Block model
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &--wide {
+    // Block model
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
+.title {
+  // Typography
+  color: var(--color-accent-2);
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    // Typography
+    font-size: 1.5rem;
+  }
+
+  &--hidden {
+    // Typography
+    font-size: 0;
+  }
+
+  &--lighted {
+    // Typography
+    color: var(--color-white);
+  }
+
+  &--highlighted {
+    // Typography
+    color: var(--color-accent);
+  }
+
+}
+
+.subtitle {
+  // Typography
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    // Typography
+    font-size: 1.25rem;
+  }
+
+}

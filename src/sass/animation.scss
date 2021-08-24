@@ -1,0 +1,15 @@
+.color {
+  // Animation
+  transition: color .4s ease-in;
+}
+
+.rotate {
+  // Animation
+  transition: transform .4s ease-in;
+}
+
+.slide-right {
+  // Animation
+  transition: transform .4s ease-in;
+  transform: translateX(calc(-100% - 5px));
+}
